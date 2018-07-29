@@ -1,6 +1,12 @@
-import { categories } from './Deck'
+export const categories = {
+    GENERIC: 'GENERIC',
+    THOUGHTFUL: 'THOUGHTFUL',
+    SEXY: 'SEXY',
+    EDGY: 'EDGY',
+    SAD: 'SAD'
+}
 
-var questionsArray = [{
+export const questions = [{
             "text": "10 years ago, where did you want to be in 10 years?",
             "category": categories.GENERIC,
         },
@@ -16,10 +22,10 @@ var questionsArray = [{
         }
     ];
 
+
 // var count = 0
 // questionsArray.forEach(function(question) {
 //     question.id = count
 //     count++
 // })
-
-export const questions = questionsArray
+// export const questions = questionsArray

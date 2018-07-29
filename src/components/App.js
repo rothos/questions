@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import DeckComponent from './Deck';
+import Deck from '../containers/Deck';
 
 const App = () => (
     <div>
         <h3>Firestarters</h3>
-        <DeckComponent/>
+        <Deck/>
     </div>
 );
 
