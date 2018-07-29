@@ -1,21 +1,25 @@
 {
-    "name": "firestarters",
-    "version": "0.0.1",
-    "private": true,
-    "dependencies": {
-        "prop-types": "^15.6.1",
-        "react": "^16.4.1",
-        "react-dom": "^16.4.1",
-        "react-scripts": "1.1.4",
-        "redux": "^3.5.2",
-        "@material-ui/core": "^1.4.1",
-        "@material-ui/icons": "^2.0.0",
-        "redux-shortcuts": "^1.6.2"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject"
-    }
+  "name": "questions",
+  "version": "0.0.1",
+  "homepage": "https://rothos.github.io/questions",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.4.1",
+    "@material-ui/icons": "^2.0.0",
+    "gh-pages": "^1.2.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4",
+    "redux": "^3.5.2",
+    "redux-shortcuts": "^1.6.2"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }

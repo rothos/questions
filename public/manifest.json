@@ -1,6 +1,6 @@
 {
-  "short_name": "Firestarters",
-  "name": "Firestarters",
+  "short_name": "Questions",
+  "name": "Questions",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +10,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#222222",
+  "theme_color": "#000000",
   "background_color": "#ffffff"
 }
