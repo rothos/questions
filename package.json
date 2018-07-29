@@ -1,9 +1,3 @@
-// To run a local server:
-// $ npm start
-//
-// To deploy to gh-pages:
-// $ npm run deploy
-
 {
   "name": "questions",
   "version": "0.0.1",
