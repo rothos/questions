@@ -24,7 +24,7 @@ const DeckComponent = ({text, category, onClickPrev, onClickNext}) => {
                 </CardContent>
                 <CardActions>
                     <Button onClick={onClickPrev}>Previous card</Button>
-                    <Button onClick={onClickNext}>Next question</Button>
+                    <Button onClick={onClickNext}>Next card</Button>
                 </CardActions>
             </Card>
 
