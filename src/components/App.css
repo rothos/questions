@@ -1,3 +1,12 @@
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
+#app {
+    margin: 1em 2em;
+}
+
 span.active {
-    font-weight: bold
+    font-weight: bold;
 }

@@ -9,7 +9,7 @@ const mapStateToProps = (state, ownProps) => {
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-    onClick: () => dispatch(actionCreators.toggleFilter(ownProps.category))
+    onChange: () => dispatch(actionCreators.toggleFilter(ownProps.category))
 })
 
 export default connect(

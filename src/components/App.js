@@ -3,7 +3,7 @@ import './App.css';
 import Deck from '../containers/Deck';
 
 const App = () => (
-    <div>
+    <div id="app">
         <h3>Firestarters</h3>
         <Deck/>
     </div>

@@ -1,10 +1,20 @@
 import React from 'react'
 
-const FilterComponent = ({active, children, onClick}) => {
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+
+const FilterComponent = ({active, children, onChange}) => {
     return (
-        <span onClick={onClick} className={active ? "active" : ""}>
-            {children}
-        </span>
+        <FormControlLabel
+            control={
+                <Checkbox
+                    checked={active ? "checked" : ""}
+                    onChange={onChange}
+                    value={children}
+                />
+            }
+            label={children}
+        />
     )
 }
 
