@@ -3,6 +3,7 @@ import { categories } from '../data/questions'
 import { toProperCase } from '../utils'
 import Filter from '../containers/Filter'
 
+import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -11,7 +12,18 @@ import Typography from '@material-ui/core/Typography';
 import ForwardIcon from '@material-ui/icons/Forward';
 import ReplyIcon from '@material-ui/icons/Reply';
 
-const DeckComponent = ({text, category, onClickPrev, onClickNext}) => {
+const styles = {
+    quote: {
+        fontStyle: "italic"
+    },
+    question: {
+    }
+}
+
+
+const DeckComponent = (props) => {
+
+    const { text, category, stackIsEmpty=false, onClickPrev, onClickNext, classes } = props
 
     return (
         <div>
@@ -28,13 +40,15 @@ const DeckComponent = ({text, category, onClickPrev, onClickNext}) => {
             }
 
             <Card
-                style={{ padding: '1em .7em 1.2em' }}
+                style={{ padding: '1em .7em .7em' }}
             >
                 <CardContent>
                     <Typography
                         paragraph={true}
                         component="p"
                         style={{ minHeight: "6em" }}
+                        className={stackIsEmpty ? classes.quote : classes.question}
+                        color={stackIsEmpty ? "textSecondary" : "default"}
                     >
                         {text}
                     </Typography>
@@ -63,4 +77,4 @@ const DeckComponent = ({text, category, onClickPrev, onClickNext}) => {
     )
 }
 
-export default DeckComponent
+export default withStyles(styles)(DeckComponent)

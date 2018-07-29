@@ -5,8 +5,9 @@ import { actionCreators } from '../actions'
 const mapStateToProps = (state, ownProps) => {
     if (!state.stack.length) {
         return {
-            text: "No questions found.",
-            category: "—"
+            text: "A question is a path; an answer is a wall.",
+            category: "—Aella",
+            stackIsEmpty: true
         }
     }
 
