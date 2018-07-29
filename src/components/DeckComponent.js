@@ -9,7 +9,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-const DeckComponent = ({text, category, onClick}) => {
+const DeckComponent = ({text, category, onClickPrev, onClickNext}) => {
 
     return (
         <div>
@@ -23,7 +23,8 @@ const DeckComponent = ({text, category, onClick}) => {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button onClick={onClick}>Next question</Button>
+                    <Button onClick={onClickPrev}>Previous card</Button>
+                    <Button onClick={onClickNext}>Next question</Button>
                 </CardActions>
             </Card>
 

@@ -18,7 +18,8 @@ const mapStateToProps = (state, ownProps) => {
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-    onClick: () => dispatch(actionCreators.nextCard())
+    onClickPrev: () => dispatch(actionCreators.prevCard()),
+    onClickNext: () => dispatch(actionCreators.nextCard())
 })
 
 

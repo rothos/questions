@@ -32,6 +32,11 @@ function appReducer(state = initialState, action) {
                 counter: (state.counter + 1) % state.stack.length
             })
 
+        case actions.PREV_CARD:
+            return Object.assign({}, state, {
+                counter: (state.counter - 1 + state.stack.length) % state.stack.length
+            })
+
         case actions.TOGGLE_FILTER:
             var newState = Object.assign({}, state)
             newState.filters[action.category] = !state.filters[action.category]
