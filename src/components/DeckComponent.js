@@ -32,7 +32,7 @@ const DeckComponent = ({text, category, onClickPrev, onClickNext}) => {
             >
                 <CardContent>
                     <Typography
-                        paragraph="true"
+                        paragraph={true}
                         component="p"
                         style={{ minHeight: "6em" }}
                     >
