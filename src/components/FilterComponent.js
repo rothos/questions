@@ -11,6 +11,7 @@ const FilterComponent = ({active, children, onChange}) => {
                     checked={active ? "checked" : ""}
                     onChange={onChange}
                     value={children}
+                    color="primary"
                 />
             }
             label={children}
