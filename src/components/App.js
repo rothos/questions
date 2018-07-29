@@ -4,7 +4,7 @@ import Deck from '../containers/Deck'
 
 const App = () => (
     <div id="app">
-        <h3>Firestarters</h3>
+        <h3>Questions</h3>
         <Deck/>
     </div>
 );
