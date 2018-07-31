@@ -56,26 +56,34 @@ const DeckComponent = (props) => {
                     <Typography
                         paragraph={true}
                         component="p"
-                        style={{ minHeight: "6em" }}
+                        style={{ minHeight: "8em" }}
                         className={stackIsEmpty ? classes.quote : classes.question}
                         color={stackIsEmpty ? "textSecondary" : "default"}
                     >
                         {text}
                     </Typography>
                 </CardContent>
-                <CardActions align="end" style={{ width: '100%' }}>
-                    <Button
-                        onClick={stopProp(onClickPrev)}
-                        variant="fab"
-                    >
-                        <ReplyIcon/>
-                    </Button>
+                <CardActions
+                    align="end"
+                    style={{ width: '100%' }}
+                >
                     <div style={{ flex: "1 1 auto" }}></div>
-                    <Typography component="div" style={{ marginTop: "auto" }} color="textSecondary">
+                    <Typography
+                        component="div"
+                        style={{ marginTop: "auto", paddingRight: ".2em" }}
+                        color="textSecondary"
+                    >
                         {category}
                     </Typography>
                 </CardActions>
             </Card>
+            <Button
+                onClick={stopProp(onClickPrev)}
+                variant="fab"
+                style={{ marginTop: "-9.5em", marginLeft: "2em" }}
+            >
+                <ReplyIcon/>
+            </Button>
         </div>
     )
 }
