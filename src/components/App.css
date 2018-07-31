@@ -8,6 +8,7 @@ body {
 }
 
 #app {
-    margin: 2em auto;
+    margin: 0 auto;
+    padding: 2em;
     max-width: 500px;
 }
