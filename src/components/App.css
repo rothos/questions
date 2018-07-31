@@ -18,12 +18,12 @@ body {
 }
 
 .star-favorite {
-    color: #ba0;
+    color: #cb0;
     transform: scale(1.2)
 }
     .star-favorite:hover {
         transform: scale(1.2);
-        filter: brightness(1.1);
+        filter: brightness(0.93);
     }
 
 .star-not-favorite {
