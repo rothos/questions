@@ -32,6 +32,8 @@ const QuestionCardComponent = (props) => {
             classes
         } = props
 
+    const starFavoriteClass = "star-" + (isFavorite ? 'favorite' : 'not-favorite')
+
     return (
         <div>
             <Card
@@ -42,10 +44,24 @@ const QuestionCardComponent = (props) => {
                 }}
             >
                 <CardContent>
+                    <span className={`star ${starFavoriteClass}`}
+                        style={{
+                            float:"right",
+                            padding: ".5em",
+                            margin: "-.5em -.5em auto auto"
+                        }}
+                        onClick={stopProp(onClickToggleFave)}
+                    >
+                        {
+                            isFavorite ?
+                                <StarIcon/> :
+                                <StarBorderIcon/>
+                        }
+                    </span>
                     <Typography
                         paragraph={true}
                         component="p"
-                        style={{ minHeight: "8em" }}
+                        style={{ minHeight: "8em", paddingRight: "4em" }}
                         className={stackIsEmpty ? classes.quote : classes.question}
                         color={stackIsEmpty ? "textSecondary" : "default"}
                     >
@@ -72,17 +88,6 @@ const QuestionCardComponent = (props) => {
                 style={{ marginTop: "-9.5em", marginLeft: "2em" }}
             >
                 <ReplyIcon/>
-            </Button>
-            <Button
-                onClick={()=>{onClickToggleFave(question.id)}}
-                variant="fab"
-                style={{ marginTop: "-9.5em", marginLeft: "1.5em" }}
-            >
-                {
-                    isFavorite ?
-                        <StarIcon/> :
-                        <StarBorderIcon/>
-                }
             </Button>
         </div>
     )
