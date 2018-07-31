@@ -1,7 +1,7 @@
 import { actions } from '../actions'
 import { questions, categories } from '../data/questions'
-import { shuffle } from '../utils'
-
+import { shuffle, arrayToggleValue } from '../utils'
+import Lockr from 'lockr'
 
 const getFilteredQuestions = (questionsArray, filtersObj) => {
     return questionsArray.filter(q => filtersObj[q.category])
@@ -17,7 +17,8 @@ const preStackState = {
     counter: 0,
     filters: Object.assign({},
         ...Object.keys(categories).map( k => ({[k]: true}) )
-    )
+    ),
+    favorites: Lockr.get('favorites') || []
 }
 
 const initialState = Object.assign({},
@@ -26,6 +27,8 @@ const initialState = Object.assign({},
 )
 
 function appReducer(state = initialState, action) {
+    // Lockr.flush()
+
     switch (action.type) {
         case actions.NEXT_CARD:
             return Object.assign({}, state, {
@@ -43,6 +46,13 @@ function appReducer(state = initialState, action) {
             newState.stack = getStack(newState)
             newState.counter = 0
             return newState
+
+        case actions.TOGGLE_FAVE:
+            var favorites = Lockr.get('favorites')
+            Lockr.set('favorites', arrayToggleValue(favorites, action.id))
+            return Object.assign({}, state, {
+                favorites: Lockr.get('favorites')
+            })
 
         default:
             return state

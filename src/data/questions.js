@@ -1,3 +1,5 @@
+import md5 from 'crypto-js/md5'
+
 export const categories = {
     GENERIC: 'GENERIC',
     THOUGHTFUL: 'THOUGHTFUL',
@@ -6,8 +8,7 @@ export const categories = {
     SAD: 'SAD'
 }
 
-
-export const questions = [
+const questionsSansIDs = [
     {
         text: "10 years ago, where did you want to be in 10 years?",
         category: categories.GENERIC
@@ -105,3 +106,9 @@ export const questions = [
         category: categories.EDGY
     }
 ]
+
+questionsSansIDs.forEach(function(question) {
+    question.id = md5(question.text).toString()
+})
+
+export const questions = questionsSansIDs
