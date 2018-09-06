@@ -6,7 +6,7 @@ export const categories = {
     SEXY: 'SEXY',
     EDGY: 'EDGY',
     SAD: 'SAD',
-    OTHER: OTHER
+    OTHER: 'OTHER'
 }
 
 const questionsSansIDs = [
@@ -83,7 +83,7 @@ const questionsSansIDs = [
     category: categories.GENERIC
     },
     {
-    text: "Have you ever seen a message broadcast in a public place along the lines of "You are beautiful!" or "You are worthwhile!" or "Things will get better!" that made you feel better about yourself?",
+    text: "Have you ever seen a message broadcast in a public place along the lines of \"You are beautiful!\" or \"You are worthwhile!\" or \"Things will get better!\" that made you feel better about yourself?",
     category: categories.GENERIC
     },
     {
@@ -131,7 +131,7 @@ const questionsSansIDs = [
     category: categories.GENERIC
     },
     {
-    text: "is pee stored in the balls?",
+    text: "Is pee stored in the balls?",
     category: categories.GENERIC
     },
     {
@@ -175,7 +175,7 @@ const questionsSansIDs = [
     category: categories.GENERIC
     },
     {
-    text: "What problems do you see in other people’s relationships?",
+    text: "What problems do you see in other people's relationships?",
     category: categories.GENERIC
     },
     {
@@ -183,7 +183,7 @@ const questionsSansIDs = [
     category: categories.GENERIC
     },
     {
-    text: "What was the most significant thing you’ve ever changed your mind about?",
+    text: "What was the most significant thing you've ever changed your mind about?",
     category: categories.GENERIC
     },
     {
@@ -199,7 +199,7 @@ const questionsSansIDs = [
     category: categories.GENERIC
     },
     {
-    text: "What’s the worst crime you’ve committed?",
+    text: "What's the worst crime you've committed?",
     category: categories.GENERIC
     },
     {
@@ -310,7 +310,7 @@ const questionsSansIDs = [
     category: categories.THOUGHTFUL
     },
     {
-    text: "Do you have any political or social opinions that you’re generally afraid to express out loud to your peer group?",
+    text: "Do you have any political or social opinions that you're generally afraid to express out loud to your peer group?",
     category: categories.THOUGHTFUL
     },
     {
@@ -322,7 +322,7 @@ const questionsSansIDs = [
     category: categories.THOUGHTFUL
     },
     {
-    text: "How do your personal morals differ from society’s morals?",
+    text: "How do your personal morals differ from society's morals?",
     category: categories.THOUGHTFUL
     },
     {
@@ -330,7 +330,7 @@ const questionsSansIDs = [
     category: categories.THOUGHTFUL
     },
     {
-    text: "If everyone’s stats were displayed above their head at all times (intelligence, charisma, dexterity, etc.), would you be treated better or worse?",
+    text: "If everyone's stats were displayed above their head at all times (intelligence, charisma, dexterity, etc.), would you be treated better or worse?",
     category: categories.THOUGHTFUL
     },
     {
@@ -386,7 +386,7 @@ const questionsSansIDs = [
     category: categories.THOUGHTFUL
     },
     {
-    text: "On planet A, everyone’s 30% dumber, and you’re a genius by comparison. On planet B, everyone’s 30% smarter, and you’re an idiot by comparison. Which planet would you prefer to live on?",
+    text: "On planet A, everyone's 30% dumber, and you're a genius by comparison. On planet B, everyone's 30% smarter, and you're an idiot by comparison. Which planet would you prefer to live on?",
     category: categories.THOUGHTFUL
     },
     {
@@ -446,11 +446,11 @@ const questionsSansIDs = [
     category: categories.THOUGHTFUL
     },
     {
-    text: "You're in a monogamous relationship. Your partner gets back late and says "Honey, I just had sex with the new lifelike sex robot." Is this cheating?",
+    text: "You're in a monogamous relationship. Your partner gets back late and says \"Honey, I just had sex with the new lifelike sex robot.\" Is this cheating?",
     category: categories.THOUGHTFUL
     },
     {
-    text: "You’ve caught a man who knows the location of a bombing to take place tomorrow. What level of torture is permissible to attempt to discover the information?",
+    text: "You've caught a man who knows the location of a bombing to take place tomorrow. What level of torture is permissible to attempt to discover the information?",
     category: categories.THOUGHTFUL
     },
     {
@@ -461,7 +461,7 @@ const questionsSansIDs = [
 
 
     {
-    text: "A girl walks by, and a man calls out, "You look beautiful today!" Is this catcalling?",
+    text: "A girl walks by, and a man calls out, \"You look beautiful today!\" Is this catcalling?",
     category: categories.EDGY
     },
     {
@@ -525,7 +525,7 @@ const questionsSansIDs = [
     category: categories.EDGY
     },
     {
-    text: "In general, in your city, who has it worse - men or women?",
+    text: "In general, in your city, who has it worse: men or women?",
     category: categories.EDGY
     },
     {
@@ -561,7 +561,7 @@ const questionsSansIDs = [
     category: categories.EDGY
     },
     {
-    text: "What’s your general opinion of education designed to help men learn how to be more seductive?",
+    text: "What's your general opinion of education designed to help men learn how to be more seductive?",
     category: categories.EDGY
     },
     {
@@ -699,7 +699,7 @@ const questionsSansIDs = [
     category: categories.SEXY
     },
     {
-    text: "Do experience the "porn spiral + regret"? As in - you open an increasingly weirder series of porn tabs while masturbating, and then after orgasm, immediately panic-close all of them out of shame?",
+    text: "Do experience the \"porn spiral + regret\"? As in - you open an increasingly weirder series of porn tabs while masturbating, and then after orgasm, immediately panic-close all of them out of shame?",
     category: categories.SEXY
     },
     {
@@ -838,7 +838,7 @@ const questionsSansIDs = [
     category: categories.OTHER
     },
     {
-    text: "Do you feel that modern western culture encourages women to overreact or underreact to "minor" sexual assaults, such as groping, too-drunk sex, etc.?",
+    text: "Do you feel that modern western culture encourages women to overreact or underreact to \"minor\" sexual assaults, such as groping, too-drunk sex, etc.?",
     category: categories.OTHER
     },
     {
